@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Life Coaching</title>
+    <style>
+      body {
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+      }
+
+      li span {
+        font-weight: bold;
+      }
+
+      ul.link {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #666769;
+        overflow: hidden;
+      }
+
+      li.link {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        padding: 16px;
+        color: whitesmoke;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      li a:hover {
+        background-color: #5397f0;
+        color: whitesmoke;
+      }
+
+      hr {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 42px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+      }
+
+      h2 {
+        font-size: 30px;
+        text-transform: capitalise;
+      }
+
+      h3 {
+        font-size: 24px;
+        text-transform: uppercase;
+      }
+
+      p,
+      ul.body {
+        font-size: 18px;
+        font-family: PT Mono, monospace;
+        line-height: 40px;
+      }
+
+      p {
+        text-align: center;
+        padding: 15px 60px 15px 60px;
+      }
+
+      ul.body {
+        list-style: square;
+        text-align: left;
+        padding: 15px 60px 15px 90px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        border: 2px solid rgb(72, 71, 97);
+        border-radius: 2px;
+        padding: 0.1px;
+        box-shadow: 2.5px 1.5px 2.5px rgba(7, 7, 44, 0.151);
+      }
+
+      button {
+        border-radius: 25px;
+        margin: 0 auto;
+        display: block;
+        background-color: #fff;
+        border: 1px solid rgb(5, 22, 150);
+        color: rgb(5, 22, 150);
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        text-decoration: none;
+        transition: all 200ms ease;
+      }
+
+      button:hover {
+        background-color: #3786ee;
+        color: whitesmoke;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <ul class="link">
+        <li class="link">
+          <a href="https://www.thestudentcoach.me/about">About</a>
+        </li>
+
+        <li class="link">
+          <a href="https://www.thestudentcoach.me/workwithme">Contact</a>
+        </li>
+        <li class="link">
+          <a href="https://www.thestudentcoach.me/blog">Blog</a>
+        </li>
+
+        <li class="link">
+          <a href="https://anchor.fm/thestudenthustle">Podcast</a>
+        </li>
+
+        <li class="link"><a href="https://unsplash.com/@skmuse_">Photos</a></li>
+      </ul>
+    </div>
+    <br />
+    <br />
+
+    <h1>
+      Life Coaching
+    </h1>
+
+    <br />
+    <img
+      src="https://images.unsplash.com/photo-1528382324962-85858f70f39b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80"
+      alt="two people's feet with the quote 'fulfill your destiny' above it"
+      width="80%"
+    />
+    <br />
+
+    <div class="definition">
+      <h2>What is Life Coaching?</h2>
+      <p>
+        Life Coaching involves engaging the services of a coach who asks guides
+        you towards reaching <em> your best potential. </em> Guidance take place
+        in several forms, mainly through asking important questions that bring
+        about clarity and acting as an accountability buddy.
+      </p>
+    </div>
+    <br />
+    <hr />
+    <div class="benefits">
+      <h2>
+        Benefits of Life Coaching
+      </h2>
+
+      <ul class="body">
+        <li>Attain <span class="main benefits"> Clarity </span> in Life</li>
+        <li>
+          Figure out <span class="main benefits"> what matters </span> and set
+          <span class="main benefits"> SMART goals </span> to help kickstart the
+          process
+        </li>
+        <li>
+          Stay <span class="main benefits"> Motivated.</span>
+          <em>Something to keep you going when the going gets tough.</em>
+        </li>
+      </ul>
+    </div>
+    <br />
+    <hr />
+    <div>
+      <h3>
+        <strong>
+          ARE YOU READY TO LIVE THE BEST VERSION OF YOUR LIFE?
+        </strong>
+      </h3>
+    </div>
+    <div>
+      <button>
+        Find Out More
+      </button>
+    </div>
+
+    <script>
+      function findOutMore() {
+        let firstName = prompt("What is your name?");
+        let age = prompt("How old are you?");
+
+        if (age < 16) {
+          alert(
+            "Hi " +
+              firstName +
+              "! I love your enthusiasm 🙌🏾but come back when you're 16 😬"
+          );
+        } else {
+          if (age >= 60) {
+            alert(
+              "Hola " +
+                firstName +
+                ". My friend, I love you, but what have you been doing all your life? 😢"
+            );
+          } else {
+            alert(
+              "YASSS " +
+                firstName +
+                "👏🏾! Now is the time, my friend. May the force be with you as you embark on this journey. 🙏🏾"
+            );
+          }
+        }
+      }
+
+      let findOutMoreButton = document.querySelector("button");
+      findOutMoreButton.addEventListener("click", findOutMore);
+    </script>
+  </body>
+</html>
